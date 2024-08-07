@@ -1,0 +1,199 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .email-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            background-color: white;
+        }
+
+        header::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 20px;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            z-index: 1;
+            background: linear-gradient(135deg, white 25%, transparent 25%),
+                        linear-gradient(225deg, white 25%, transparent 25%);
+            background-size: 20px 40px;
+            background-position: 0 0, 10px -20px;
+        }
+
+        .content {
+            padding: 80px;
+            background-image: url("./images/bg.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .card {
+            background: linear-gradient(90deg, #00C6FB, #005BEA);
+            color: #fff;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            display: flex;
+            min-height: 350px;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card > div {
+            width: 35%;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .card p {
+            margin: 10px 0;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card button {
+            display: inline-block;
+            background: linear-gradient(90deg, #29323C, #485563);
+            padding: 20px 65px;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 25px;
+            margin-top: 40px;
+            border: none;
+            outline: none;
+        }
+
+        .card button:hover {
+            background: linear-gradient(90deg, #3a3f4c, #596175);
+        }
+
+
+        button {
+            display: inline-block;
+            background: linear-gradient(90deg, #29323C, #485563);
+            padding: 20px 65px;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+
+
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(90deg, #485563, #29323C);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+
+        button:active {
+            transform: scale(0.98);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+
+
+
+        .img-wrapper {
+            margin: 10px 0;
+        }
+
+        .img-wrapper img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+        }
+
+        footer a {
+            color: #0094ff;
+            text-decoration: none;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .separator {
+            width: 80%;
+            margin: 10px auto;
+            border-top: 1px solid #666;
+        }
+
+        .icon {
+            font-size: 20px;
+        }
+
+        @media (min-width: 600px) {
+            .card {
+                flex-direction: row;
+                padding: 30px;
+            }
+
+            .text-content {
+                flex: 1;
+                margin-right: 20px;
+            }
+
+            .img-wrapper {
+                flex-shrink: 0;
+            }
+
+            .img-wrapper img {
+                width: 500px;
+            }
+
+            .card h2 {
+                font-size: 35px;
+            }
+
+            .card p {
+                font-size: 20px;
+            }
+        }
