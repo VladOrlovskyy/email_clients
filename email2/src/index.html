@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+        .button {
+            display: inline-block;
+            background: linear-gradient(90deg, #29323C, #485563);
+            padding: 20px 65px;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            box-sizing: border-box;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+   
+        }
+        .section {
+            background: linear-gradient(90deg, #00C6FB, #005BEA);
+            color: #ffffff;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .section td {
+            padding: 20px;
+            text-align: left;
+        }
+        .section img {
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .contact-info {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+        }
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        /* Media queries for mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+                padding: 10px !important;
+            }
+            .button {
+                width: 100% !important;
+                padding: 15px !important;
+                font-size: 16px !important;
+                box-sizing: border-box;
+            }
+            .section {
+                display: block !important;
+            }
+            .section td {
+                text-align: center !important;
+                display: block !important;
+                padding: 10px !important;
+            }
+            .section img {
+                width: 100% !important;
+                height: auto !important;
+                margin: 0 auto !important;
+            }
+            .contact-info div {
+                display: block !important;
+                text-align: center !important;
+            }
+        }
+        @media only screen and (min-width: 601px) {
+            .contact-info div {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; padding: 20px;">
+        <tr>
+            <td align="center">
+                <table cellpadding="0" cellspacing="0" class="container">
+                    <!-- Header -->
+                    <tr>
+                        <td align="center" style="text-align: center; padding: 20px 0; position: relative;">
+                            <h1 style="margin: 0; font-size: 24px; color: #333;">LOGO HERE</h1>
+                            <div style="content: ''; display: block; width: 100%; height: 20px; position: absolute; bottom: -20px; left: 0; z-index: 1; background: linear-gradient(135deg, white 25%, transparent 25%), linear-gradient(225deg, white 25%, transparent 25%); background-size: 20px 40px; background-position: 0 0, 10px -20px;"></div>
+                        </td>
+                    </tr>
+                    <!-- Content Sections -->
+                    <tr>
+                        <td style="padding: 20px; background-image: url('./images/bg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                            <!-- Section 1 -->
+                            <table cellpadding="0" cellspacing="0" class="section">
+                                <tr>
+                                    <td>
+                                        <h2 style="margin-top: 0; font-size: 28px; color: #ffffff;">Sveta111, win! lottery gifts</h2>
+                                        <p style="margin: 10px 0; font-size: 18px; color: #ffffff;">We have a whole "Universe of Prizes" and we are ready to share great gifts with you! All you have to do to get them is win an exciting lottery that runs every day.</p>
+                                        <a href="#" class="button">Play</a>
+                                    </td>
+                                    <td>
+                                        <img src="./images/image1.png" alt="Prize Image 1">
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- Section 2 -->
+                            <table cellpadding="0" cellspacing="0" class="section">
+                                <tr>
+                                    <td>
+                                        <h2 style="margin-top: 0; font-size: 28px; color: #ffffff;">Become a champion in tournaments</h2>
+                                        <p style="margin: 10px 0; font-size: 18px; color: #ffffff;">We have a whole "Universe of Prizes" and we are ready to share great gifts with you! All you have to do to get them is win an exciting lottery that runs every day.</p>
+                                        <a href="#" class="button">Play</a>
+                                    </td>
+                                    <td>
+                                        <img src="./images/image2.png" alt="Prize Image 2">
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- Section 3 -->
+                            <table cellpadding="0" cellspacing="0" class="section">
+                                <tr>
+                                    <td>
+                                        <h2 style="margin-top: 0; font-size: 28px; color: #ffffff;">Claim your Bonuses</h2>
+                                        <p style="margin: 10px 0; font-size: 18px; color: #ffffff;">Generous gifts are waiting for you in the form of no deposit bonuses and free spins in hot slots.</p>
+                                        <a href="#" class="button">Take</a>
+                                    </td>
+                                    <td>
+                                        <img src="./images/image3.png" alt="Prize Image 3">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Footer -->
+                    <tr>
+                        <td class="contact-info">
+                            <p>If you have questions, please contact us:</p>
+                            <div style="display: inline-block;">
+                                <span style="font-size: 20px;"><img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email Icon" class="icon"></span>
+                                <span>support@support.email</span>
+                            </div>
+                            <div style="display: inline-block;">
+                                <span style="font-size: 20px;"><img src="https://cdn-icons-png.flaticon.com/512/561/561131.png" alt="Phone Icon" class="icon"></span>
+                                <span>123-456-6789</span>
+                            </div>
+                            <div style="width: 80%; margin: 10px auto; border-top: 1px solid #ddd;"></div>
+                            <p style="margin: 0;">Some games and bonuses may not be available in your country.</p>
+                            <p style="margin: 0;">You take all the credit for the fact that you have registered on our site.</p>
+                            <p style="margin: 0;">For a return link with us, please send a copy to the whole sheet.</p>
+                            <p style="margin: 0;"><a href="unsubscribe-link" style="color: #0094ff; text-decoration: none;">You can unsubscribe</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
